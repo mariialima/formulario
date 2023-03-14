@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cadastro de picolé</title>
 
+    <style>
+        .botoes
+        {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            
+        }
+        button
+        {
+            color: rgb(192, 30, 154);
+            background-color: rgb(237, 93, 41);
+            width: 100px;
+            height: 60px;
+            font-size: 20px;
+        }
+        button:hover
+        {
+            background-color: white;
+        }
+
+    </style>
+
 
 </head>
 <body>
@@ -27,6 +50,41 @@
        data do pedido:
        <input type="date" id="data_pedido">
    </fieldset>
+<br> <br>
+   <fieldset>
 
+       <legend> sobre o sabor </legend>
+       escolha somente 1 sabor:
+       <br> <br>
+       <input type="radio" id="pimenta" name="sabores">
+       pimenta
+       <input type="radio" id="cenoura" name="sabores">
+       cenoura
+       <input type="radio" id="cimento" name="sabores">
+       cimento
+       <input type="radio" id="abobora" name="sabores">
+       abóbora
+       <br> <br>
+       selecione quais as cores da embalagem:
+       <br>
+       <input type="checkbox" id="amarelo" name="amarelo">
+       <input type="checkbox" id="verde" name="amarelo">
+       <input type="checkbox" id="burro" name="burro quando foge">
+       <br> <br>
+       selecione um estado para entrega:
+       <select id="estado">
+            <option>amapá</option>
+            <option>bahia</option>
+            <option>paraná</option>
+            <option> selected> santa catarina </option>
+        </select>
+
+    </fieldset>
+
+    <div class="botoes">
+        <button>ENVIAR</button>
+        <button>LIMPAR</button>
+
+</div>
 </body>
 </html>
